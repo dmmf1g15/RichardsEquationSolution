@@ -4,7 +4,7 @@ p=vg.GuelphLoamDrying
 #Choose soil depth
 ProfileDepth=3 #m
 
-#Choose locations of soil in order to get weather!
+#Choose locations of soil in order to get weather. Ideally this location should have the soil-properties defined above. 
 lat=55.917162
 long=-3.187954
 

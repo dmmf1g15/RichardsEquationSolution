@@ -23,7 +23,7 @@ dt=t[1]-t[0] #time step
 
 #Make transient infiltration flux
 t_interp=np.arange(0,t[-1]+2,1) #need an extra day for the rainfall
-dates,netflux=get_historic_netflux(lat,-long,len(t_interp))
+dates,netflux=get_historic_netflux(lat,long,len(t_interp))
 qTfun=interp1d(t_interp,-1*netflux) #-1 for flux condition since we are in upside down land
 
 #Make plot showing rainfall profile and make sure interpolation agrees
